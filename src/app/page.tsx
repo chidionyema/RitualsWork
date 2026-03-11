@@ -62,6 +62,7 @@ export default function Home() {
 
       {/* Hero */}
       <section
+        id="hero"
         style={{
           minHeight: "100vh",
           display: "flex",
@@ -154,9 +155,8 @@ export default function Home() {
 
       {/* Problem Section */}
       <div
+        className="section-wrap"
         style={{
-          padding: "7rem 4rem",
-          borderBottom: "1px solid var(--border)",
           background: "var(--cream)",
         }}
       >
@@ -173,14 +173,7 @@ export default function Home() {
         >
           The Problem With Every Other Programme
         </p>
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr",
-            gap: "5rem",
-            alignItems: "start",
-          }}
-        >
+        <div className="two-column-grid">
           <div>
             <h2
               style={{
@@ -281,6 +274,7 @@ export default function Home() {
             }}
           >
             <div
+              className="contrast-table-grid"
               style={{
                 display: "grid",
                 gridTemplateColumns: "1fr 1fr",
@@ -288,6 +282,7 @@ export default function Home() {
               }}
             >
               <div
+                className="contrast-cell-left"
                 style={{
                   padding: "1.2rem 1.5rem",
                   fontFamily: sansFont,
@@ -341,6 +336,7 @@ export default function Home() {
             ].map((row, i, arr) => (
               <div
                 key={i}
+                className="contrast-table-grid"
                 style={{
                   display: "grid",
                   gridTemplateColumns: "1fr 1fr",
@@ -349,6 +345,7 @@ export default function Home() {
                 }}
               >
                 <div
+                  className="contrast-cell-left"
                   style={{
                     padding: "1.2rem 1.5rem",
                     fontSize: "0.95rem",
@@ -378,9 +375,8 @@ export default function Home() {
 
       {/* Method Section */}
       <div
+        className="section-wrap"
         style={{
-          padding: "7rem 4rem",
-          borderBottom: "1px solid var(--border)",
           background: "var(--white)",
         }}
       >
@@ -443,10 +439,8 @@ export default function Home() {
 
         {/* Pillars */}
         <div
+          className="three-column-grid"
           style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(3, 1fr)",
-            gap: "3rem",
             margin: "4rem 0",
           }}
         >
@@ -510,6 +504,7 @@ export default function Home() {
 
         {/* Statement Box */}
         <div
+          className="statement-box"
           style={{
             background: "var(--navy)",
             padding: "2.5rem 3rem",
@@ -532,9 +527,8 @@ export default function Home() {
 
       {/* Guide Section */}
       <div
+        className="section-wrap"
         style={{
-          padding: "7rem 4rem",
-          borderBottom: "1px solid var(--border)",
           background: "var(--cream)",
         }}
       >
@@ -551,14 +545,7 @@ export default function Home() {
         >
           The Guide
         </p>
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "220px 1fr",
-            gap: "5rem",
-            alignItems: "start",
-          }}
-        >
+        <div className="guide-grid">
           {/* Sidebar */}
           <div
             style={{
@@ -679,9 +666,8 @@ export default function Home() {
       {/* Apply Section */}
       <div
         id="apply"
+        className="section-wrap"
         style={{
-          padding: "7rem 4rem",
-          borderBottom: "1px solid var(--border)",
           background: "var(--white)",
         }}
       >
