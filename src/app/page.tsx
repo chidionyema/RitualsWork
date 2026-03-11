@@ -274,7 +274,7 @@ export default function Home() {
             }}
           >
             <div
-              className="contrast-table-grid"
+              className="contrast-table-grid contrast-header"
               style={{
                 borderBottom: "1px solid var(--border)",
               }}
@@ -334,7 +334,7 @@ export default function Home() {
             ].map((row, i, arr) => (
               <div
                 key={i}
-                className="contrast-table-grid"
+                className="contrast-table-grid contrast-row"
                 style={{
                   borderBottom:
                     i < arr.length - 1 ? "1px solid var(--border)" : "none",
@@ -350,9 +350,11 @@ export default function Home() {
                     borderRight: "1px solid var(--border)",
                   }}
                 >
+                  <span className="mobile-label mobile-label-them">Conventional</span>
                   {row.them}
                 </div>
                 <div
+                  className="contrast-cell-right"
                   style={{
                     padding: "1.2rem 1.5rem",
                     fontSize: "0.95rem",
@@ -361,6 +363,7 @@ export default function Home() {
                     fontWeight: 450,
                   }}
                 >
+                  <span className="mobile-label mobile-label-us">ARCH</span>
                   {row.us}
                 </div>
               </div>

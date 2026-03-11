@@ -82,6 +82,10 @@ textarea:focus {
   grid-template-columns: 1fr 1fr;
 }
 
+.mobile-label {
+  display: none;
+}
+
 /* Section wrapper class */
 .section-wrap {
   padding: 7rem 4rem;
@@ -127,9 +131,42 @@ textarea:focus {
     grid-template-columns: 1fr !important;
   }
 
+  .contrast-header {
+    display: none !important;
+  }
+
   .contrast-cell-left {
     border-right: none !important;
-    border-bottom: 1px solid var(--border);
+    border-bottom: none !important;
+    padding-bottom: 0.5rem !important;
+  }
+
+  .contrast-cell-right {
+    padding-top: 0.5rem !important;
+    border-bottom: 1px solid var(--border) !important;
+    margin-bottom: 1rem;
+  }
+
+  .contrast-row:last-child .contrast-cell-right {
+    border-bottom: none !important;
+  }
+
+  .mobile-label {
+    display: block !important;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 0.5rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+  }
+
+  .mobile-label-them {
+    color: var(--text-muted);
+  }
+
+  .mobile-label-us {
+    color: var(--gold-dark);
   }
 
   .statement-box {
