@@ -276,8 +276,6 @@ export default function Home() {
             <div
               className="contrast-table-grid"
               style={{
-                display: "grid",
-                gridTemplateColumns: "1fr 1fr",
                 borderBottom: "1px solid var(--border)",
               }}
             >
@@ -338,8 +336,6 @@ export default function Home() {
                 key={i}
                 className="contrast-table-grid"
                 style={{
-                  display: "grid",
-                  gridTemplateColumns: "1fr 1fr",
                   borderBottom:
                     i < arr.length - 1 ? "1px solid var(--border)" : "none",
                 }}
